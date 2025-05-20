@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --font-main: 'Poppins', Arial, Helvetica, sans-serif;
+  --color-bg: #fff8f0;
+  --color-primary: #ff914d;
+  --color-secondary: #ffcd38;
+  --color-accent: #4dd599;
+  --color-text: #2d3142;
+  --color-link: #ff914d;
+  --color-link-hover: #4dd599;
+  --color-nav-bg: #fff3e0;
+  --color-nav-shadow: rgba(255, 145, 77, 0.08);
+}
+
+nav {
+  width: 100%;
+  background: var(--color-nav-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: var(--font-main);
+  box-shadow: 0 2px 8px var(--color-nav-shadow);
+}
+
+.nav-background {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  font-family: var(--font-main);
+  padding-right: 300px;
+}
+
+.nav-background img {
+  height: 150px;
+  width: 150px;
+  
+}
+
+.nav-list {
+  display: flex;
+  gap: 4rem;
+  margin-left: 30rem;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  font-family: var(--font-main);
+  background: transparent;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 500;
+
+}
+
+.nav-list button {
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  color: var(--color-text);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(78,140,255,0.08);
+  transition: background 0.2s, transform 0.1s;
+  font-family: var(--font-main);
+}
+
+.nav-list button:hover, .nav-list button:focus {
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
