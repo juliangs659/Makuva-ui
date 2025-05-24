@@ -1,4 +1,4 @@
-import './Sidebar.css'
+import '../../assets/styles/Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClose } from '@fortawesome/free-solid-svg-icons'
 
@@ -21,16 +21,22 @@ export default function Sidebar({ open, onClose }) {
         </div>
       </div>
       <div className="sidebar__date">{user.fecha}</div>
-      <div className="sidebar__actions">
-        <button className="sidebar__action">Editar perfil</button>
-        <button className="sidebar__action">Configurar</button>
-      </div>
       <div className="sidebar__search">
         <input type="text" placeholder="Buscar..." />
       </div>
-      <button className="sidebar__logout">Cerrar sesión</button>
-      <div className="sidebar__info">
-        <small>Versión 1.0 · Proyecto React · {user.fecha}</small>
+      <div className="sidebar__actions">
+        <button className="sidebar__action">Editar perfil</button>
+        <button className="sidebar__action">Configurar</button>
+        <button className="sidebar__action">Mis rutas</button>
+        <button className="sidebar__action">Explorar rutas</button>
+        <button className="sidebar__action">Favoritos</button>
+        <button className="sidebar__action">Ayuda</button>
+      </div>
+      <div className="sidebar__divider">
+        <button className="sidebar__logout">Cerrar sesión</button>
+        <div className="sidebar__info">
+          <small>Versión 1.0 · Proyecto React · {user.fecha}</small>
+        </div>
       </div>
     </aside>
   )
