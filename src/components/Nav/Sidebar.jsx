@@ -1,6 +1,6 @@
 import '../../assets/styles/Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClose } from '@fortawesome/free-solid-svg-icons'
+import { faClose, faUser, faGear, faMagnifyingGlassLocation, faMagnifyingGlass, faHeart, faInfo } from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar({ open, onClose }) {
   // Simulación de datos de usuario
@@ -25,15 +25,15 @@ export default function Sidebar({ open, onClose }) {
         <input type="text" placeholder="Buscar..." />
       </div>
       <div className="sidebar__actions">
-        <button className="sidebar__action">Editar perfil</button>
-        <button className="sidebar__action">Configurar</button>
-        <button className="sidebar__action">Mis rutas</button>
-        <button className="sidebar__action">Explorar rutas</button>
-        <button className="sidebar__action">Favoritos</button>
-        <button className="sidebar__action">Ayuda</button>
+        <button className="sidebar__action"><FontAwesomeIcon icon={faUser} /> Editar perfil</button>
+        <button className="sidebar__action"><FontAwesomeIcon icon={faGear}/>Configurar</button>
+        <button className="sidebar__action"><FontAwesomeIcon icon={faMagnifyingGlassLocation} /> Mis rutas</button>
+        <button className="sidebar__action"><FontAwesomeIcon icon={faMagnifyingGlass} /> Explorar rutas</button>
+        <button className="sidebar__action"><FontAwesomeIcon icon={faHeart}/> Favoritos</button>
+        <button className="sidebar__action"><FontAwesomeIcon icon={faHeart} /> Ayuda</button>
       </div>
       <div className="sidebar__divider">
-        <button className="sidebar__logout">Cerrar sesión</button>
+        <button className="sidebar__logout"><FontAwesomeIcon icon={faClose}/> Cerrar sesión</button>
         <div className="sidebar__info">
           <small>Versión 1.0 · Proyecto React · {user.fecha}</small>
         </div>

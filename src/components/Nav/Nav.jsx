@@ -1,4 +1,4 @@
-import './Nav.css'
+import '../../assets/styles/Nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faRoute, faMagnifyingGlassLocation, faCircleInfo, faBars} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
