@@ -21,7 +21,7 @@ export default function Nav() {
       />
       <Sidebar open={menuOpen} onClose={handleMenuToggle}>
         <ul className="sidebar-list">
-          <li><a href="#home"><FontAwesomeIcon icon={faHouse} /> Inicio</a></li>
+          <li><a href="#home"><FontAwesomeIcon icon={faHouse} /> INICIO</a></li>
           <li><a href="#Routes"><FontAwesomeIcon icon={faRoute} /> Mis Rutas</a></li>
           <li><a href="#Explore"><FontAwesomeIcon icon={faMagnifyingGlassLocation} /> Explorar</a></li>
           <li><a href="#about"><FontAwesomeIcon icon={faCircleInfo} /> Acerca de</a></li>
